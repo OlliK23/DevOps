@@ -16,8 +16,6 @@ services:
       dockerfile: Dockerfile
     image: frontend:3.0
     restart: unless-stopped
-    ports:
-      - "8081:80"
     depends_on:
       - backend
     networks:
